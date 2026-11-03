@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Free, offline-friendly learning apps for kids: Olympiad Practice (Grade 6) and Abacus Is Fun (Levels 1-8). No login, no ads.">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+<title>Kids Learning Apps</title>
+<style>
+:root{
+  --bg:#f4f5fb; --card:#fff; --ink:#172033; --muted:#5b6680; --line:#e2e6f0; --soft:#eef1f8;
+  --shadow:0 10px 30px rgba(23,32,51,.08);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --bg:#0f1320; --card:#181d2d; --ink:#e8ecf6; --muted:#9aa5bf; --line:#2a3148; --soft:#20263a; --shadow:0 10px 30px rgba(0,0,0,.35); }
+}
+:root[data-theme="dark"]{ --bg:#0f1320; --card:#181d2d; --ink:#e8ecf6; --muted:#9aa5bf; --line:#2a3148; --soft:#20263a; --shadow:0 10px 30px rgba(0,0,0,.35); }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.hero{background:linear-gradient(120deg,#4f46e5,#7c3aed 55%,#db2777);color:#fff;padding:calc(48px + env(safe-area-inset-top)) 16px 84px;text-align:center}
+.hero .em{font-size:3.2rem;line-height:1}
+.hero h1{margin:12px 0 8px;font-size:clamp(1.9rem,6vw,2.9rem);letter-spacing:-.02em}
+.hero p{margin:0 auto;max-width:620px;opacity:.92;font-size:1.08rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.badges span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:6px 14px;font-size:.92rem;font-weight:600}
+main{max-width:1000px;margin:-52px auto 0;padding:0 16px 48px}
+.apps{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.app{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.app .top{padding:24px 24px 0;display:flex;gap:16px;align-items:center}
+.app .ic{width:68px;height:68px;border-radius:18px;display:grid;place-items:center;font-size:38px;flex:none;background:var(--tint)}
+.app h2{margin:0;font-size:1.45rem}
+.app .tag{color:var(--muted);font-weight:600;font-size:.95rem}
+.app ul{margin:16px 24px 0;padding:0;list-style:none;display:grid;gap:8px}
+.app li{display:flex;gap:10px;align-items:flex-start}
+.app li b{flex:none;width:1.5em;text-align:center}
+.app .go{margin:22px 24px 24px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:16px;
+  background:var(--c);color:#fff;text-decoration:none;font-weight:800;font-size:1.1rem;margin-top:auto}
+.app .body{flex:1;padding-bottom:22px}
+.app .go:active{transform:scale(.98)}
+.olympiad{--c:#4f46e5;--tint:#ecebff}
+.abacus{--c:#0e9f6e;--tint:#e3f6ec}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .olympiad{--tint:#26254a} :root:not([data-theme="light"]) .abacus{--tint:#143326} }
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:24px;margin-top:20px}
+.card h3{margin:0 0 4px;font-size:1.25rem}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));margin-top:16px}
+.step{background:var(--soft);border-radius:16px;padding:16px}
+.step b{display:block;margin-bottom:4px}
+.step span{color:var(--muted);font-size:.95rem}
+.note{color:var(--muted);font-size:.95rem;margin:14px 0 0}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:8px 16px 40px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="em">🎓</div>
+  <h1>Kids Learning Apps</h1>
+  <p>Free practice apps made for my child and shared with friends. Open a link and start practising on a phone, tablet or laptop.</p>
+  <div class="badges"><span>🆓 Free</span><span>🙅 No login</span><span>🚫 No ads</span><span>📴 Works offline</span></div>
+</header>
+
+<main>
+  <div class="apps">
+    <section class="app olympiad">
+      <div class="body">
+        <div class="top"><div class="ic">🏆</div><div><h2>Olympiad Practice</h2><div class="tag">Grade 6 · 7 subjects</div></div></div>
+        <ul>
+          <li><b>📚</b><span>Math, Science, English, GK, हिंदी, Computers and Logical Reasoning</span></li>
+          <li><b>💡</b><span>300+ questions with explanations, plus unlimited Math and Reasoning practice</span></li>
+          <li><b>⏱️</b><span>Timed mock exams with certificates 🏅</span></li>
+          <li><b>🎯</b><span>Weak Areas report shows which topics need more practice</span></li>
+        </ul>
+      </div>
+      <a class="go" href="https://shivanandanayak.github.io/olympiad-practice/">Open Olympiad Practice →</a>
+    </section>
+
+    <section class="app abacus">
+      <div class="body">
+        <div class="top"><div class="ic">🧮</div><div><h2>Abacus Is Fun!</h2><div class="tag">Levels 1 to 8</div></div></div>
+        <ul>
+          <li><b>✍️</b><span>Written, 🔊 Oral and 🧠 Mental exam sections</span></li>
+          <li><b>⏱️</b><span>60-minute timed exams with scores and mistakes review</span></li>
+          <li><b>📊</b><span>Progress history and learning checklist for each child</span></li>
+          <li><b>🏅</b><span>Printable certificates when a level is passed</span></li>
+        </ul>
+      </div>
+      <a class="go" href="https://shivanandanayak.github.io/abacus-is-fun/">Open Abacus Is Fun →</a>
+    </section>
+  </div>
+
+  <section class="card">
+    <h3>📴 Use without internet</h3>
+    <p class="note" style="margin-top:0">Open an app once while online, then add it to your Home Screen. After that it opens from the icon like a normal app, even with no internet.</p>
+    <div class="steps">
+      <div class="step"><b>🍎 iPad / iPhone</b><span>Open in Safari → tap Share ⬆️ → Add to Home Screen</span></div>
+      <div class="step"><b>🤖 Android</b><span>Open in Chrome → tap ⋮ menu → Add to Home screen / Install app</span></div>
+      <div class="step"><b>💻 Laptop</b><span>Open in Chrome or Edge → click the Install icon in the address bar</span></div>
+    </div>
+    <p class="note">💾 Progress is saved only on that device. Use <b>Settings → Backup</b> in each app now and then to keep a copy.</p>
+  </section>
+</main>
+
+<footer>Made with ❤️ for curious kids · <a href="https://github.com/ShivanandaNayak">GitHub</a></footer>
+</body>
+</html>
