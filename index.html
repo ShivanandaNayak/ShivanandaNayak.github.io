@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Free, offline-friendly learning apps for kids: Olympiad Practice (Grade 6) and Abacus Is Fun (Levels 1-8). No login, no ads.">
+<meta name="description" content="Free, offline-friendly apps: Olympiad Practice (Grade 6), Abacus Is Fun (Levels 1-8) and the Pancha Pakshi calendar. No login, no ads.">
 <meta name="theme-color" content="#4f46e5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
-<title>Kids Learning Apps</title>
+<title>Free Learning Apps</title>
 <style>
 :root{
   --bg:#f4f5fb; --card:#fff; --ink:#172033; --muted:#5b6680; --line:#e2e6f0; --soft:#eef1f8;
@@ -26,7 +26,7 @@ a{color:inherit}
 .badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
 .badges span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:6px 14px;font-size:.92rem;font-weight:600}
 main{max-width:1000px;margin:-52px auto 0;padding:0 16px 48px}
-.apps{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.apps{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr))}
 .app{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
 .app .top{padding:24px 24px 0;display:flex;gap:16px;align-items:center}
 .app .ic{width:68px;height:68px;border-radius:18px;display:grid;place-items:center;font-size:38px;flex:none;background:var(--tint)}
@@ -41,7 +41,9 @@ main{max-width:1000px;margin:-52px auto 0;padding:0 16px 48px}
 .app .go:active{transform:scale(.98)}
 .olympiad{--c:#4f46e5;--tint:#ecebff}
 .abacus{--c:#0e9f6e;--tint:#e3f6ec}
-@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .olympiad{--tint:#26254a} :root:not([data-theme="light"]) .abacus{--tint:#143326} }
+.pakshi{--c:#0d6a6d;--tint:#e1f1ef}
+.group{margin:30px 4px 14px;font-size:1.25rem}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .olympiad{--tint:#26254a} :root:not([data-theme="light"]) .abacus{--tint:#143326} :root:not([data-theme="light"]) .pakshi{--tint:#12302d} }
 .card{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:24px;margin-top:20px}
 .card h3{margin:0 0 4px;font-size:1.25rem}
 .steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));margin-top:16px}
@@ -56,8 +58,8 @@ footer a{color:var(--muted)}
 <body>
 <header class="hero">
   <div class="em">🎓</div>
-  <h1>Kids Learning Apps</h1>
-  <p>Free practice apps made for my child and shared with friends. Open a link and start practising on a phone, tablet or laptop.</p>
+  <h1>Free Learning Apps</h1>
+  <p>Free apps made for my family and shared with friends: practice apps for kids, and a Pancha Pakshi timing calendar. Open a link on a phone, tablet or laptop.</p>
   <div class="badges"><span>🆓 Free</span><span>🙅 No login</span><span>🚫 No ads</span><span>📴 Works offline</span></div>
 </header>
 
@@ -90,6 +92,22 @@ footer a{color:var(--muted)}
     </section>
   </div>
 
+  <h2 class="group">☀ Astrology &amp; timing</h2>
+  <div class="apps">
+    <section class="app pakshi">
+      <div class="body">
+        <div class="top"><div class="ic">🕊️</div><div><h2>Pancha Pakshi</h2><div class="tag">Five-bird timing calendar · ☀ Actual Sun</div></div></div>
+        <ul>
+          <li><b>🐦</b><span>Find your bird from birth details, birth star or name</span></li>
+          <li><b>🌍</b><span>Pick country, then city or town: 70,000+ places, latitude and time zone filled in</span></li>
+          <li><b>⏳</b><span>Eat, Rule, Walk, Sleep and Death times for every day, with best windows</span></li>
+          <li><b>⚠️</b><span>Padu and adhikara days, Rahu Kalam, Amrita windows and calendar alerts</span></li>
+        </ul>
+      </div>
+      <a class="go" href="https://shivanandanayak.github.io/pancha-pakshi/">Open Pancha Pakshi →</a>
+    </section>
+  </div>
+
   <section class="card">
     <h3>📴 Use without internet</h3>
     <p class="note" style="margin-top:0">Open an app once while online, then add it to your Home Screen. After that it opens from the icon like a normal app, even with no internet.</p>
@@ -102,6 +120,6 @@ footer a{color:var(--muted)}
   </section>
 </main>
 
-<footer>Made with ❤️ for curious kids · <a href="https://github.com/ShivanandaNayak">GitHub</a></footer>
+<footer>Made with ❤️ for curious minds · <a href="https://github.com/ShivanandaNayak">GitHub</a></footer>
 </body>
 </html>
